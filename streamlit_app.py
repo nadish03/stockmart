@@ -127,7 +127,7 @@ if authenticate_user():
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 
-  local_css("style/style.css.txt")
+  local_css("style.css.txt")
 
   st.header( "OUR TEAM MEMBERS")
   ("720820103072 [NADISH KS](https://www.linkedin.com/in/nadish-ks-10276b255)")
