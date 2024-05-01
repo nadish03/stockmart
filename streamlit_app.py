@@ -45,6 +45,7 @@ def authenticate_user():
         return False
      
 if authenticate_user():
+  st.set_page_config(layout="wide")
   st.title('Stock Price Prediction App')
   image = Image.open('stock.png')
   st.sidebar.title('STOCKMART')
