@@ -46,6 +46,7 @@ def authenticate_user():
      
 if authenticate_user():
   st.set_page_config(layout="wide")
+  st.link_button("Logout","https://stockmartforex.streamlit.app/")
   st.title('Stock Price Prediction App')
   image = Image.open('stock.png')
   st.sidebar.title('STOCKMART')
