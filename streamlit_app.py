@@ -8,7 +8,7 @@ from plotly import graph_objs as go
 from PIL import Image
 
 def creds_entered():
-    if st.session_state["user"].strip() == "stock@18" and st.session_state["passwd"].strip() == "123":
+    if st.session_state["user"].strip() == "123" and st.session_state["passwd"].strip() == "123":
      st.session_state ["authenticated"]= True
     else:
       st.session_state["authenticated"]= False
@@ -24,8 +24,8 @@ def authenticate_user():
     image = Image.open('stock.png')
     st.image(image)
     with open("stock.png") as file:
-     st.header('WELCOME TO STOCKMART')
-    ('Stock Price Prediction App')
+     st.header('WELCOME TO STOCKMART(still under construction)')
+    ('Stock Price Prediction App(user name and password:123)')
     st.text_input(label="USERNAME:", value="", key="user", on_change=creds_entered)
     st.text_input(label="PASSWORD:", value="", key="passwd", type="password", on_change=creds_entered)
     st.button('Login')
@@ -130,8 +130,5 @@ if authenticate_user():
 
   local_css("style.css.txt")
 
-  st.header( "OUR TEAM MEMBERS")
-  ("720820103072 [NADISH KS](https://www.linkedin.com/in/nadish-ks-10276b255)")
-  ("720820103077 [NAVEEN S](https://www.instagram.com/_dio_kid_naveentrinks?igsh=MTZhOXJlN3p4cHNzeA==)")
-  ("720820103076 [NAVEEN R](https://www.instagram.com/ft.crushxx_?igsh=eW90Yzhsbndkemhl)")
-  ("720820103306 [KISHORE CHAKKARAVARTHY A](https://www.linkedin.com/in/kishore-chakkaravarthy-54a0812b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)")
+  st.header( "CREATED AND DESIGNED BY")
+  ("[NADISH SELVARAJ](https://www.linkedin.com/in/nadish-ks-10276b255)")
