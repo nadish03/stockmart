@@ -37,15 +37,15 @@ def authenticate_user():
         image = Image.open('stock.png')
         st.image(image)
         with open("stock.png") as file:
-         st.header('WELCOME TO STOCKMART')
-        ('Stock Price Prediction App')
+         st.header('WELCOME TO STOCKMART(still under construction)')
+        ('Stock Price Prediction App(user name and password:123)')
         st.text_input(label="USERNAME:", value="", key="user", on_change=creds_entered)
         st.text_input(label="PASSWORD:", value="", key="passwd", type="password", on_change=creds_entered)
         st.button('Login')
         return False
      
 if authenticate_user():
-  st.sidebar.link_button("Logout","https://stockmartforex.streamlit.app/")
+  st.sidebar.link_button("Logout","https://nadish-forex-prediction.streamlit.app/")
   st.title('Stock Price Prediction App')
   image = Image.open('stock.png')
   st.sidebar.title('STOCKMART')
